@@ -1,0 +1,9 @@
+      <div class="results-container">
+        <h1><u>Search Result</u></h1>
+        <body>
+          <h2>Search Result for "${artistName}"</h2>
+          <ul class="artist-name">
+            ${artists.map(artist => `<li>${artist.name}</li>`).join('')}
+          </ul>
+        </body>
+      </div>

@@ -1,0 +1,21 @@
+<!-- albums.hbs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Albums</title>
+</head>
+<body>
+    <h1>Artist Albums</h1>
+    <div class="albums">
+        {{#each albums}}
+            <div class="album">
+                <h2>{{this.name}}</h2>
+                <img src="{{this.image}}" alt="{{this.name}}">
+            </div>
+        {{/each}}
+    </div>
+</body>
+</html>
